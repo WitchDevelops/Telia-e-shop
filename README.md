@@ -67,8 +67,6 @@ This project has everything you need for a full-fledged `Next.js` application wi
 
 - `apps/docs` : A dedicated Next.js application for your project documentation. Create guides, API references, tutorials, and more to help users understand your project.
 
-* **`apps/web` vs. `apps/docs`:**
-
 ## Understanding the Apps
 
 **`apps/web` vs. `apps/docs`:**
@@ -76,10 +74,39 @@ This project has everything you need for a full-fledged `Next.js` application wi
 | Feature         | `apps/web` (Your Web App)                       | `apps/docs` (Your Documentation)             |
 | --------------- | ----------------------------------------------- | -------------------------------------------- |
 | Purpose         | Core application logic, UI, and user experience | Guides, API references, tutorials, etc.      |
-| --------------- | ----------------------------------------------- | -------------------------------------------- |
 | Deployment      | Main website or web app                         | Subdirectory (e.g., `/docs`) on your website |
-| --------------- | ----------------------------------------------- | -------------------------------------------- |
 | Content Type    | Pages, components, interactive elements         | Markdown, code snippets, explanations        |
-| --------------- | ----------------------------------------------- | -------------------------------------------- |
 | Target Audience | End-users                                       | Developers, users seeking information        |
-| --------------- | ----------------------------------------------- | -------------------------------------------- |
+
+## [ESLint config] (https://turbo.build/repo/docs/guides/tools/eslint)
+
+## Installation and Setup
+
+1. Clone the Repository: `git clone `
+2. Install Dependencies: `cd <project-directory>`
+   `npm install`
+3. Turbo CLI: This project uses Turborepo, which provides the turbo command-line interface (CLI) for efficient task management. Make sure you have Turbo installed globally: `npm install turbo --global`
+
+## Available Commands
+
+This Turborepo starter provides several convenient commands to manage your development workflow:
+
+| Command            | Description                                                                                                             |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| npm run dev        | Starts development servers for both the web app (at http://localhost:3000) and the docs app (at http://localhost:3001). |
+| npm run build      | Builds both apps for production, generating optimized output in the dist folder.                                        |
+| npm run start      | Starts the production server for the web app (usually after building with npm run build).                               |
+| npm run lint       | Runs ESLint to analyze your code for potential errors and style issues.                                                 |
+| npm run type-check | Checks your TypeScript code for type errors.                                                                            |
+| npm run format     | Formats all code using Prettier to maintain consistent style.                                                           |
+| npm run clean      | Clears the Turborepo cache to optimize build times and resolve potential issues.                                        |
+
+## Turbo Tasks
+
+Turborepo also offers a powerful task runner for more advanced scenarios. You can use the `turbo` command directly in your terminal.
+
+| Command                  | Description                                                                                                   |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| turbo build --filter=web | Builds only the web app.                                                                                      |
+| turbo lint --filter=ui   | Lints only the ui package.                                                                                    |
+| turbo dev --parallel     | Runs development servers for both apps concurrently, potentially improving performance on multi-core systems. |

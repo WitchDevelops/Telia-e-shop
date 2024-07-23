@@ -2,6 +2,11 @@ import type { Config } from "tailwindcss";
 
 // We want each package to be responsible for its own content.
 const config: Omit<Config, "content"> = {
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "../../packages/ui/**/*.{js,ts,jsx,tsx}",
+    "../docs/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       backgroundImage: {
