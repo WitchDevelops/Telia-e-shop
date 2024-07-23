@@ -86,8 +86,9 @@ This project has everything you need for a full-fledged `Next.js` application wi
 2. Install Dependencies: `cd <project-directory>`
    `npm install`
 3. Turbo CLI: This project uses Turborepo, which provides the turbo command-line interface (CLI) for efficient task management. Make sure you have Turbo installed globally: `npm install turbo --global`
+4. Start development servers
 
-## Available Commands
+## Basic Commands
 
 This Turborepo starter provides several convenient commands to manage your development workflow:
 
