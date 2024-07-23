@@ -56,3 +56,30 @@ This Turborepo has some additional tools already setup for you:
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
+
+## Understanding the Apps
+
+This project has everything you need for a full-fledged `Next.js` application with comprehensive tooling:
+
+-`Apps`:
+
+- `apps/web` : Your main Next.js application. This is where you'll build your web app's user interface (UI), pages, routing logic, and all user interaction features.
+
+- `apps/docs` : A dedicated Next.js application for your project documentation. Create guides, API references, tutorials, and more to help users understand your project.
+
+* **`apps/web` vs. `apps/docs`:**
+
+## Understanding the Apps
+
+**`apps/web` vs. `apps/docs`:**
+
+| Feature         | `apps/web` (Your Web App)                       | `apps/docs` (Your Documentation)             |
+| --------------- | ----------------------------------------------- | -------------------------------------------- |
+| Purpose         | Core application logic, UI, and user experience | Guides, API references, tutorials, etc.      |
+| --------------- | ----------------------------------------------- | -------------------------------------------- |
+| Deployment      | Main website or web app                         | Subdirectory (e.g., `/docs`) on your website |
+| --------------- | ----------------------------------------------- | -------------------------------------------- |
+| Content Type    | Pages, components, interactive elements         | Markdown, code snippets, explanations        |
+| --------------- | ----------------------------------------------- | -------------------------------------------- |
+| Target Audience | End-users                                       | Developers, users seeking information        |
+| --------------- | ----------------------------------------------- | -------------------------------------------- |
