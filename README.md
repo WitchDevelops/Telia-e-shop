@@ -112,3 +112,11 @@ Turborepo also offers a powerful task runner for more advanced scenarios. You ca
 | turbo build --filter=web | Builds only the web app.                                                                                      |
 | turbo lint --filter=ui   | Lints only the ui package.                                                                                    |
 | turbo dev --parallel     | Runs development servers for both apps concurrently, potentially improving performance on multi-core systems. |
+
+## Running Tests in the Monorepo
+
+1. Run Tests for All Packages : `npm run test` , `turbo test`
+
+2. Run Tests for Specific Packages. If you need to run tests for a specific package, you can use the following commands based on the package's package.json setup. For example `./apps/web`. Navigate to the web directory and run: `npm run test` or `npx jest`
+
+3. Run Tests in Watch Mode. If you want to run tests in watch mode, which automatically reruns tests when files change: `npm run test:watch`

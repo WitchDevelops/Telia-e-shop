@@ -5,4 +5,15 @@ module.exports = {
     tsconfigRootDir: __dirname,
     sourceType: "module",
   },
+  env: {
+    jest: true,
+  },
+  // rules: {
+  //   "import/no-extraneous-dependencies": [
+  //     "error",
+  //     {
+  //       devDependencies: ["**/__tests__/**", "**/*.test.tsx", "**/*.test.ts"],
+  //     },
+  //   ],
+  // },
 };
