@@ -13,17 +13,18 @@
       "jest",
       "node",
       "@testing-library/jest-dom"
-    ],
+    ]
+    // "jsx": "preserve"
+    ,
     "jsx": "preserve"
   },
   "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "jest.setup.ts"
+    ".",
+    ".next/types/**/*.ts"
   ],
   "exclude": [
+    "dist",
+    "build",
     "node_modules"
   ]
 }
