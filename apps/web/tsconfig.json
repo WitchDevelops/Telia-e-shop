@@ -4,8 +4,17 @@
     "@repo/typescript-config/react-library.json"
   ],
   "compilerOptions": {
-    "plugins": [{ "name": "next" }],
-    "types": ["jest", "node", "@testing-library/jest-dom"]
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "types": [
+      "jest",
+      "node",
+      "@testing-library/jest-dom"
+    ],
+    "jsx": "preserve"
   },
   "include": [
     "next-env.d.ts",
@@ -14,5 +23,7 @@
     ".next/types/**/*.ts",
     "jest.setup.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
