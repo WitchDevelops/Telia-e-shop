@@ -92,15 +92,16 @@ This project has everything you need for a full-fledged `Next.js` application wi
 
 This Turborepo starter provides several convenient commands to manage your development workflow:
 
-| Command            | Description                                                                                                             |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------- |
-| npm run dev        | Starts development servers for both the web app (at http://localhost:3000) and the docs app (at http://localhost:3001). |
-| npm run build      | Builds both apps for production, generating optimized output in the dist folder.                                        |
-| npm run start      | Starts the production server for the web app (usually after building with npm run build).                               |
-| npm run lint       | Runs ESLint to analyze your code for potential errors and style issues.                                                 |
-| npm run type-check | Checks your TypeScript code for type errors.                                                                            |
-| npm run format     | Formats all code using Prettier to maintain consistent style.                                                           |
-| npm run clean      | Clears the Turborepo cache to optimize build times and resolve potential issues.                                        |
+| Command               | Description                                                                                                             |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| npm run dev           | Starts development servers for both the web app (at http://localhost:3000) and the docs app (at http://localhost:3001). |
+| npm run build         | Builds both apps for production, generating optimized output in the dist folder.                                        |
+| npm run start         | Starts the production server for the web app (usually after building with npm run build).                               |
+| npm run lint          | Runs ESLint to analyze your code for potential errors and style issues.                                                 |
+| npm run type-check    | Checks your TypeScript code for type errors.                                                                            |
+| npm run format        | Formats all code using Prettier to maintain consistent style.                                                           |
+| npm run clean         | Clears the Turborepo cache to optimize build times and resolve potential issues.                                        |
+| npm run lint -- --fix | To fix the ESLint warning                                                                                               |
 
 ## Turbo Tasks
 
